@@ -12,7 +12,7 @@ from contact_form import contact
 
  # Page setup
 st.set_page_config(
-    page_title="archana",
+    page_title="Abhishek Vyas",
     page_icon="📋",
     layout="wide",
 )
@@ -25,11 +25,11 @@ def gradient(color1, color2, color3, content1, content2):
                 unsafe_allow_html=True)
 def aboutMe():
     col1, col2 = st.columns(2)
-    full_name = "Archana"
+    full_name = "Abhishek Vyas"
     info = {'Intro': "Data scientist"}
 
     with col1:
-        st.markdown("<h2 style='text-align: center; '>Hello! I'm Archana 👋</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center; '>Hello! I'm Abhishek Vyas 👋</h2>", unsafe_allow_html=True)
 
         st.markdown("""
         <style>
@@ -47,12 +47,16 @@ def aboutMe():
         feature engineering, modeling, and validation. I hold a Master's in Electronics (Signal Processing) and a 
         Bachelor's in Electronics and Communication 
         Engineering. I am passionate about continuous learning and advancing in the AI field.
+                    
+        Experienced software developer with a passion for Omni-channel fulfillment solutions and Order Management Systems (OMS). 
+        Skilled in crafting robust REST APIs using Spring Boot and Flask, with a solid foundation in Python for data analysis and insights generation. 
+        Proficient in creating dynamic dashboards with the ELK stack to visualize and analyze product outcomes. 
+        A Post-graduate from IIIT Delhi, with hands-on experience in NLP and advanced data analysis projects.                 
         </div>
         """, unsafe_allow_html=True)
-        c1,c2, c3 =st.columns(3)
-        c1.markdown("""**[GitHub](https://github.com/archanags001)**""")
-        c2.markdown("""**[LinkedIn](https://www.linkedin.com/in/archanags001)** """)
-        c3.markdown("""**[Upwork](https://www.upwork.com/freelancers/~010f3758a004ea64dd?viewMod%20e)**""")
+        c1,c2 =st.columns(2)
+        c1.markdown("""**[GitHub](https://github.com/abhivickyvyas)**""")
+        c2.markdown("""**[LinkedIn](https://www.linkedin.com/in/abhishek-vyas-306009128)** """)
 
 
     path = "Animation_blue_robo.json"
@@ -78,7 +82,7 @@ def get_base64_image(image_path):
         return base64.b64encode(img_file.read()).decode()
 
 # Get the base64 string of the image
-logo_base64 = get_base64_image("Image.jpeg")
+logo_base64 = get_base64_image("abhishek_vyas_pic.jpeg")
 
 # Logo styling
 logo_html = f"""
@@ -108,7 +112,7 @@ with st.sidebar:
     # Option menu in sidebar
     pages = ["About me", "Resume", "Experience",  "Projects", "Testimonials", "Contact"]
     nav_tab_op = option_menu(
-        menu_title="Archana",
+        menu_title="Abhishek Vyas",
         options=pages,
         icons=['person-fill', 'file-text', 'briefcase', 'folder', 'star', 'envelope'],
         menu_icon="cast",
